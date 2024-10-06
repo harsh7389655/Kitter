@@ -1,24 +1,6 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
-  /**
-   * colors
-   */
 
   --bright-yellow-crayola: hsl(36, 94%, 57%);
   --portland-orange: hsl(15, 84%, 57%);
@@ -62,10 +44,7 @@
 
   --section-padding: 40px;
 
-  /**
-   * shadow
-   */
-
+  /* shadow
   --shadow-1: 0 8px 16px hsla(0, 0%, 0%, 0.15);
   --shadow-2: 0 8px 8px hsla(0, 0%, 0%, 0.2);
 
@@ -86,11 +65,6 @@
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 
 }
-
-
-
-
-
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -152,13 +126,9 @@ body {
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
-
-
-
-
-/*-----------------------------------*\
+/**\
   #REUSED STYLE
-\*-----------------------------------*/
+\**/
 
 .container { padding-inline: 15px; }
 
@@ -257,10 +227,6 @@ body {
 }
 
 .w-100 { width: 100%; }
-
-
-
-
 
 /*-----------------------------------*\
   #HEADER
@@ -372,10 +338,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
@@ -398,10 +360,6 @@ body {
 
 .hero .btn:is(:hover, :focus) { background-color: var(--portland-orange); }
 
-
-
-
-
 /*-----------------------------------*\
   #CATEGORY
 \*-----------------------------------*/
@@ -419,10 +377,6 @@ body {
 }
 
 .category-card .card-title:is(:hover, :focus) { color: var(--portland-orange); }
-
-
-
-
 
 /*-----------------------------------*\
   #OFFERS
@@ -449,10 +403,6 @@ body {
 .offer-card .btn { background-color: var(--portland-orange); }
 
 .offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
-
-
-
-
 
 /*-----------------------------------*\
   #PRODUCT
@@ -501,10 +451,6 @@ body {
   font-weight: var(--fw-700);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -526,10 +472,6 @@ body {
 .service-card .card-title { margin-block: 10px; }
 
 .service-card .card-text { color: var(--spanish-gray); }
-
-
-
-
 
 /*-----------------------------------*\
   #CTA
@@ -553,10 +495,6 @@ body {
   color: var(--black);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #BRAND
 \*-----------------------------------*/
@@ -573,10 +511,6 @@ body {
   max-width: max-content;
   margin-inline: auto;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #FOOTER
@@ -673,9 +607,6 @@ body {
   max-width: max-content;
 }
 
-
-
-
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
@@ -702,10 +633,6 @@ body {
   transform: translateY(-10px);
 }
 
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -731,8 +658,6 @@ body {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -740,8 +665,6 @@ body {
   .scrollbar-item { min-width: calc(50% - 15px); }
 
   .grid-list { grid-template-columns: 1fr 1fr; }
-
-
 
   /**
    * HERO
@@ -754,15 +677,11 @@ body {
     align-items: center;
   }
 
-
-
   /**
    * OFFER
    */
 
   .offer .grid-list { grid-template-columns: 1fr; }
-
-
 
   /**
    * PRODUCT
@@ -808,8 +727,6 @@ body {
 
   .product-card:is(:hover, :focus-within) .card-action-btn { opacity: 1; }
 
-
-
   /**
    * CTA
    */
@@ -818,15 +735,11 @@ body {
 
   .cta .h2 { --fs-2: 3.2rem; }
 
-
-
   /**
    * BRAND
    */
 
   .brand .scrollbar-item { min-width: 25%; }
-
-
 
   /**
    * FOOTER
@@ -835,10 +748,6 @@ body {
   .footer-top .container { grid-template-columns: 1fr 1fr; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 768px screen
@@ -860,8 +769,6 @@ body {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -869,8 +776,6 @@ body {
   .scrollbar-item { min-width: calc(33.33% - 20px); }
 
   .grid-list { grid-template-columns: repeat(3, 1fr); }
-
-
 
   /**
    * HERO
@@ -883,14 +788,11 @@ body {
 
   .hero-text { font-size: 2.4rem; }
 
-
-
   /**
    * OFFER
    */
 
   .offer .grid-list { grid-template-columns: repeat(3, 1fr); }
-
 
 
   /**
@@ -905,8 +807,6 @@ body {
     align-items: flex-end;
   }
 
-
-
   /**
    * FOOTER
    */
@@ -918,10 +818,6 @@ body {
   }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 992px screen
@@ -950,8 +846,6 @@ body {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
@@ -959,8 +853,6 @@ body {
   .container { padding-inline: 30px; }
 
   .scrollbar-item { min-width: calc(20% - 24px); }
-
-
 
   /**
    * HEADER
@@ -1006,23 +898,17 @@ body {
 
   .header.active .navbar-link:is(:hover, :focus) { color: var(--portland-orange); }
 
-
-
   /**
    * HERO
    */
 
   .hero { margin-block-start: 0; }
 
-
-
   /**
    * CATEGORY
    */
 
   .category-card .h3 { --fs-3: 2rem; }
-
-
 
   /**
    * SERVICE
@@ -1032,15 +918,11 @@ body {
 
   .service-card .h3 { --fs-3: 2.4rem; }
 
-
-
   /**
    * BRAND
    */
 
   .brand .scrollbar-item { min-width: 20%; }
-
-
 
   /**
    * FOOTER
@@ -1049,10 +931,6 @@ body {
   .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr; }
 
 }
-
-
-
-
 
 /**
  * responsive for large than 1200px screen
@@ -1075,23 +953,17 @@ body {
 
   }
 
-
-
   /**
    * REUSED STYLE
    */
 
   .grid-list { grid-template-columns: repeat(4, 1fr); }
 
-
-
   /**
    * CTA
    */
 
   .cta-content { padding-block: 100px; }
-
-
 
   /**
    * BRAND, FOOTER
